@@ -1,0 +1,163 @@
+
+
+
+.main-info,
+.third-info {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.second-info {
+  box-sizing: border-box;
+}
+
+.main-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+  transition: all ease 0.5s;
+}
+
+.market-explanation {
+  box-sizing: content-box;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  transition: all 1s;
+  padding-bottom: 20vh;
+}
+
+
+
+.explanation-title {
+  padding-top: 5vh;
+}
+
+.h1-main {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 15px 0;
+  border-radius: 20px;
+  text-decoration: underline 10px rgb(255, 140, 0);
+  color: whitesmoke;
+  text-shadow: 3px 3px 3px black;
+}
+
+.explanation-h2 h2 {
+  color: rgb(235, 235, 235);
+  text-shadow: 1px 3px 2px black;
+}
+
+/*
+  PART B
+*/
+.second-info-box {
+  box-sizing: border-box;
+  margin: 30px 0;
+  padding: 5vh 0;
+  height: 70vh;
+  color: white;
+}
+
+.second-info-box1 {
+  background: rgb(0,47,85);
+  background: linear-gradient(90deg, rgba(0,47,85,1) 0%, rgba(0,80,144,1) 64%, rgba(0,65,117,1) 100%);
+}
+
+.second-info-box2 {
+  background: rgb(18,35,30);
+  background: linear-gradient(90deg, rgba(18,35,30,1) 0%, rgba(30,57,48,1) 64%, rgba(15,29,24,1) 100%); 
+}
+
+.second-info-box3 {
+  background: rgb(2,39,52);
+  background: linear-gradient(90deg, rgba(2,39,52,1) 0%, rgba(3,53,70,1) 3%, rgba(3,66,88,1) 48%, rgba(2,40,53,1) 100%);
+}
+
+.second-info-grid {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.second-info-first-box {
+  width: 33vw;
+  display: flex;
+  justify-content: end;
+  margin-left: 5vw;
+}
+
+.second-info-second-box {
+  flex: 1;
+  text-align: center;
+  margin: 0 5vw 0 10vw;
+}
+
+.second-info-second-box h1 {
+  color: white;
+  font-size: 3vw;
+  margin-bottom: 4vh;
+}
+
+.second-info-second-box div {
+  margin-top: 3vh;
+  line-height: 1.9em;
+}
+
+.second-info-img {
+  width: 25vw;
+  object-fit: contain;
+}
+
+.second-h2 {
+  color: rgb(234, 234, 234);
+}
+
+.second-info-final-text {
+  color:#ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 0 0 1px rgb(0, 0, 0);
+}
+
+/*
+  PART C
+*/
+
+.third-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(rgb(0, 0, 0), rgb(255, 255, 255) 40%, black);
+  height: 90vh;
+  padding: 40px 0;
+}
+
+.third-info-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.third-info-first-box, .third-info-second-box, .third-info-third-box, .third-info-fourth-box {
+  height: 45vh;
+}
+
+.third-info-first-box{
+  background-color: lightgreen;
+}
+
+.third-info-second-box {
+  background-color: lightskyblue;
+}
+
+.third-info-third-box {
+  background-color: lightyellow;
+}
+
+.third-info-fourth-box {
+  background-color: lightcoral;
+}
+
+

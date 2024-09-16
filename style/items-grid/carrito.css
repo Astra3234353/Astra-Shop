@@ -1,0 +1,67 @@
+.cart {
+  display: grid;
+  margin: 100px 3vw;
+  gap: 20px;
+}
+
+@media (max-width: 1800px) {
+  .cart {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1200px) {
+  .cart {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  .cart {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.whats-btn {
+  text-align: center;
+  background-color: rgb(26, 171, 80);
+  color: white;
+  border: none;
+  padding: 8px 0;
+  border-radius: 10px;
+}
+
+.whats-btn:hover {
+  background-color: rgb(22, 162, 74);
+}
+
+.delete-btn {
+  flex: 1;
+  background-color: white;
+  color: #017cb6;
+  border-radius: 12px;
+  border: none;
+  font-size: 15px;
+  margin-left: 6px;
+}
+
+.delete-btn:hover {
+  color:  rgb(176, 42, 42);
+}
+
+.cart-account-status {
+  color: green;
+  margin: 2px 0 5px 0;
+}
+
+.empty-cart {
+  width: 90vw;
+  margin-top: 15vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.empty-cart-img {
+  width: 35%;
+  object-fit: cover;
+}

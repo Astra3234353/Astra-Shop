@@ -1,0 +1,49 @@
+body {
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 200px;
+  margin: 0;
+}
+
+div {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+button {
+  display: inline-block;
+}
+
+p {
+  margin: 0;
+}
+
+
+
+
+button {
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+select {
+  cursor: pointer;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 1;
+  color: #1a181f;
+}
+h2 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #2f2f2f;
+}

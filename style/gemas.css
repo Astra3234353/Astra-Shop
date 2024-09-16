@@ -1,0 +1,212 @@
+.gems-explanation-box {
+  margin-top: 80px;
+  align-items: end;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  background-color: #235746;
+  color: white;
+  letter-spacing: 0.03em;
+  height: 300px;
+}
+
+.gems-explanation-header {
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1;
+  display: flex;
+  justify-content: center;  
+  text-align: center;
+  padding-bottom: 10px; 
+}
+
+.gems-explanation-description-box {
+  font-size: 15px;
+}
+
+.gems-explanation-description, 
+.gems-explanation-description-2 {
+  display: flex;
+  justify-content: center;  
+  text-align: center;   
+  margin-bottom: 8px; 
+}
+
+.gems-buttons-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around
+}
+
+@media (max-width: 741px) {
+  .gems-buttons-box p{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .gems-explanation-header {
+    font-size: 25px;
+  }
+
+
+}
+
+
+.gems-button {
+  color: white;
+  background: none;
+  border: none;
+  width: 150px;
+  padding: 5px;
+  font-weight: 600;
+  font-size: 12px;
+
+  border: solid 2px white;
+  border-radius: 20px;
+  transition: all 0.15s;
+}
+
+.gems-button:hover {
+  background-color: white;
+  color: rgb(60, 60, 60);
+}
+
+.gems-button:active {
+  background-color: white;
+  color: rgb(0, 0, 0);
+}
+
+.gems-button-p {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.gems-explanation-image-box {
+  display: flex;
+  justify-content:end;
+  height: 300px;
+}
+
+@media (min-width: 1200px) {
+  .gems-explanation-box{
+    grid-template-columns: 1fr 2fr;
+  }
+  
+
+  .gems-explanation-image-box {
+    height: 375px;
+  }
+}
+
+@media (min-width: 900px) {
+  .gems-explanation-box{
+    height: 375px;
+  }
+  
+
+  .gems-explanation-image-box {
+    height: 375px;
+  }
+
+  .gems-explanation-description-box {
+    font-size: 18px;
+  }
+
+  .gems-explanation-header {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 630px) {
+  .gems-explanation-box{
+    height: 300px;
+  }
+  
+
+  .gems-explanation-image-box {
+    height: 300px;
+  }
+
+  .gems-explanation-description-box {
+    font-size: 12px;
+  }
+
+  .gems-explanation-header {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 530px) {
+  .gems-explanation-box{
+    height: 275px;
+  }
+  
+
+  .gems-explanation-image-box {
+    height: 275px;
+  }
+
+  .gems-explanation-description-box {
+    font-size: 11px;
+  }
+
+  .gems-explanation-header {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 490px) {
+  .gems-explanation-box {
+    height: 250px;
+  }
+
+  .gems-explanation-image-box {
+    height: 250px;
+  }
+
+  .gems-explanation-description {
+    font-size: 8px;
+  }
+
+  .gems-explanation-header {
+    font-size: 15px;
+  }
+}
+
+.gems-explanation-image {
+  width: auto;
+  height: 100%;
+}
+
+
+/* 
+  GUIA DE ADQUISICION / COMPRA DE GEMAS
+*/
+
+.guia-de-compra-de-gemas {
+  padding: 60px 3vw;
+  margin: 40px 0;
+  background: rgb(3, 65, 116);
+  color: aliceblue;
+  box-shadow: 0px 15px 20px rgba(73, 73, 73, 0.979);
+  border-top: solid 10px rgb(3, 53, 94);
+  border-bottom: solid 10px rgb(3, 53, 94);
+}
+
+@media (max-width: 750px) { 
+  .guia-de-compra-de-gemas {
+    padding: 40px 0;
+  }
+
+  .guia-gemas-p-in-li {
+    margin: 10px 0;
+  }
+} 
+
+.guia-gemas-p-in-li {
+  margin: 30px 0;
+}

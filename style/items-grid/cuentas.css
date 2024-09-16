@@ -1,0 +1,523 @@
+/*Cards*/
+.container-card{
+  width: 100%;
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-width: 300px;
+  margin-left: -10px;
+  column-gap: 10px;
+  vertical-align: middle;
+  justify-content: flex-end;
+}
+
+@media (max-width: 800px) {
+.container-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: -20px;
+}
+}
+
+@media (max-width: 500px) {
+.container-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: -20px;
+}
+}
+
+.title-cards{
+  width: 100%;
+  max-width: 1080px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  color: black;
+}
+.card{
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background:#ffffff;
+  
+  transition: all 400ms ease-out;
+  cursor: default;
+}
+
+
+.card:hover{
+  box-shadow: 0px 0px 5px 5px rgb(255, 153, 0);
+  transform: translateY(-3%);
+}
+.card img{
+  width: 100%;
+  height: 210px;
+}
+.card .contenido-card{
+  padding: 15px;
+  text-align: center;
+}
+.card .contenido-card h3{
+  margin-bottom: 15px;
+  color: #7a7a7a;
+}
+.card .contenido-card p{
+  line-height: 1.8;
+  color: #6a6a6a;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.card .contenido-card a{
+  display: inline-block;
+  padding: 5px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: rgb(255, 170, 0);
+  border: 1px solid rgb(255, 162, 0);
+  border-radius: 4px;
+  transition: all 400ms ease;
+  margin-bottom: 5px;
+}
+.card .contenido-card a:hover{
+  background: linear-gradient(-45deg, #ff9d00 0%, #bf00ff 90% );
+  color: #fff;
+  border: none;
+}
+
+.flex-container {
+flex-wrap: wrap;
+}
+
+.preview-image {
+object-fit: cover;
+}
+
+/*Fin-Cards*/
+
+
+
+
+
+
+
+
+
+
+
+
+.main {
+  margin-top: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.products-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  row-gap: 10px;
+}
+@media (max-width: 2000px) {
+  .products-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 1700px) {
+  .products-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 1400px) {
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1100px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 675px) {
+  .products-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.product-container {
+  padding-top: 40px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  border-right: 1px solid rgb(231, 231, 231);
+  border-top: 1px solid rgb(231, 231, 231);
+
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.product-container:hover {
+  box-shadow: 0px 0px 10px rgb(72, 72, 72) ;
+  transform: scale(1.05);
+  background-color: rgb(248, 248, 248);
+}
+
+
+.product-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 180px;
+  margin-bottom: 20px;
+}
+
+.product-image {
+  width: 100%;
+  height: 210px;
+  object-fit: contain;
+}
+
+.product-image-cart {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 0 8px black;
+  object-position: top;
+}
+
+.product-image-diamond {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.product-name {
+  height: 75px;
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.product-no-price {
+  height: 75px;
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.product-id {
+  height: 30px;
+  color: #bf00ff;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.product-rating-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.product-rating-stars {
+  width: 100px;
+  margin-right: 6px;
+}
+
+.product-rating-count {
+  color: rgb(1, 124, 182);
+  cursor: pointer;
+  margin-top: 3px;
+}
+
+.product-price-box{
+  white-space: nowrap;
+}
+
+.product-price {
+  display: inline-block;
+  height: 0;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.product-no-text {
+  font-size: 14px;
+}
+
+.product-no-price {
+  margin-top: 10px;
+  display: block;
+  height: 0;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.product-no-price-mm {
+  color: rgb(37, 211, 102);
+  text-shadow:
+    0 0 1px rgb(87, 87, 87);
+  font-weight: 600;
+  margin-top: 25px;
+  font-size: 14px;
+  text-align: right;
+}
+
+.product-price-mm {
+  display: inline-block;
+  font-size: 12px;
+}
+
+.product-quantity-container {
+  margin-bottom: 17px;
+}
+
+.product-spacer {
+  flex: 1;
+}
+
+.added-to-cart {
+  color: rgb(6, 125, 98);
+  font-size: 16px;
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+
+  /* At first, the "Added to cart" message will
+     be invisible. Use JavaScript to change the
+     opacity and make it visible. */
+  opacity: 0;
+}
+
+.added-to-cart img {
+  height: 20px;
+  margin-right: 5px;
+}
+
+.add-to-cart-button {
+  width: 100%;
+  padding: 8px;
+  border-radius: 50px;
+}
+
+
+/* 
+  Cuentas P2
+*/
+
+.button-primary {
+  color: rgb(33, 33, 33);
+  background-color: #ffcf21b9;
+  border: 1px solid #ffcf21b9;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+  margin-top: 25px;
+}
+
+.button-primary2 {
+  color: rgb(33, 33, 33);
+  background-color: #ffcf21b9;
+  border: 1px solid #ffcf21b9;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+  margin-top: 45px;
+}
+
+.button-primary:hover {
+  background-color: rgb(247, 202, 0);
+  border: 1px solid rgb(242, 194, 0);
+}
+
+.button-primary:active {
+  background: rgb(255, 216, 20);
+  border-color: rgb(252, 210, 0);
+  box-shadow: none;
+}
+
+.button-secondary {
+  color: rgb(33, 33, 33);
+  background: white;
+  border: 1px solid rgb(213, 217, 217);
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+
+.button-secondary:hover {
+  background-color: rgb(247, 250, 250);
+}
+
+.button-secondary:active {
+  background-color: rgb(237, 253, 255);
+  box-shadow: none;
+}
+
+/* These styles will limit text to 2 lines. Anything
+   beyond 2 lines will be replaced with "..."
+   You can find this code by using an A.I. tool or by
+   searching in Google.
+   https://css-tricks.com/almanac/properties/l/line-clamp/ */
+.limit-text-to-2-lines {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.link-primary {
+  color: rgb(1, 124, 182);
+  cursor: pointer;
+}
+
+.link-primary:hover {
+  color: rgb(196, 80, 0);
+}
+
+/* Styles for dropdown selectors. */
+select {
+  color: rgb(33, 33, 33);
+  background-color: rgb(240, 240, 240);
+  border: 1px solid rgb(213, 217, 217);
+  border-radius: 8px;
+  padding: 3px 5px;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+
+select:focus,
+input:focus {
+  outline: 2px solid rgb(255, 153, 0);
+}
+
+.product-diamond-image-container img {
+  background: linear-gradient(-20deg, #1495d5 0%, #030303 60% );
+}
+
+/*
+  Add item btn
+*/
+
+.button {
+  position: relative;
+  width: 100%;
+  height: 35px;
+  margin-top: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #34974d;
+  background-color: #3aa856;
+  border-radius: 16px;
+}
+
+.button, .button__icon, .button__text {
+  transition: all 0.3s;
+}
+
+.button .button__text {
+  color: #fff;
+  font-weight: 600;
+}
+
+.button__text {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.button__icon {
+  position: absolute;
+  height: 100%;
+  width: 39px;
+  background-color: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  border-radius: 16px;
+}
+
+.button .svg {
+  width: 30px;
+  stroke: #fff;
+}
+
+.button:hover {
+  background: #34974d;
+}
+
+.button:hover .button__text {
+  color: transparent;
+}
+
+.button:hover .button__icon {
+  width: 95%;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.button:active, 
+.button__icon:active {
+  background-color: #fff;
+  transition: all 2s;
+}
+
+.cart-active {
+  background-color: rgb(255, 139, 30);
+  color: white;
+  border: none;
+  position: relative;
+  width: 100%;
+  height: 35px;
+  margin-top: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+}
+
+.cart-active:hover {
+  background-color: rgb(238, 128, 26);
+}
+
+.product-wapp-link a {
+  display: flex;
+  justify-content: end;
+  font-size: 14px;
+  margin-top: 3px;
+  color: rgb(75, 213, 36);
+}
+
+.product-wapp-link:hover a {
+  color: rgb(64, 182, 31);
+  cursor: alias;
+}
