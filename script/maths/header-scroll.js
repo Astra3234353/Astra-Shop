@@ -1,22 +1,32 @@
-
-headerTitle = document.querySelector('.header-title');
-headerItems = document.querySelector('.header-items');
-
-
-function scrollheader() {
+export function scrollIndexHeader() {
     window.addEventListener('scroll', function() {
     const header = document.querySelector('.header');
-    if (window.scrollY > 20) {
+    const headerTitle = document.querySelector('.header-title');
+    const dynamicViewportHeight = window.innerHeight;
+
+    if (window.scrollY > dynamicViewportHeight * 0.1) {
         header.style.opacity = '1';
         header.style.background = 'white';
+        headerTitle.style.opacity = '1';
+        header.style.boxShadow = "0 0 8px black";
     } else {
         header.style.background = '';
         header.style.opacity = '0.8';
+        headerTitle.style.opacity = '0';
+        header.style.boxShadow = "0 0 0 black";
     }
   })
 };
 
-scrollheader();
+export function scrollHeader() {
+    window.addEventListener('scroll', function() {
+    const header = document.querySelector('.header');
+    if (window.scrollY > 0) {
+        header.style.opacity = '1';
+        header.style.background = 'white';
+    }
+  })
+};
 
 
 
@@ -30,7 +40,7 @@ const backgrounds = [
     'url("../img/wallpapers/hd-official-igg-3.jpg")'
 ];
 
-function cambiarFondo() {
+export function cambiarFondo() {
     const randomNum = Math.floor(Math.random() * backgrounds.length);
     if (mainInfoDiv) {
         mainInfoDiv.style.backgroundImage = backgrounds[randomNum];

@@ -13,8 +13,9 @@
   z-index: 1000;
   text-transform: uppercase;
   font-weight: 700;
-  opacity: 0.8;
+  opacity: 1;
   backdrop-filter: blur(4px);
+  box-shadow: 0 0 8px black;
   transition: all 0.15s;
 }
 
