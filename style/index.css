@@ -72,8 +72,7 @@
 }
 
 .second-info-box3 {
-  background: rgb(2,39,52);
-  background: linear-gradient(90deg, rgba(2,39,52,1) 0%, rgba(3,53,70,1) 3%, rgba(3,66,88,1) 48%, rgba(2,40,53,1) 100%);
+  background-image: linear-gradient(to right, #f82020, #450a0a);
 }
 
 .second-info-grid {
@@ -109,6 +108,13 @@
 .second-info-img {
   width: 25vw;
   object-fit: contain;
+}
+
+.second-info-img-p3 {
+  width: 51vh;
+  filter: drop-shadow(
+    0 0 3px rgba(236, 236, 236, 0.496)
+  );
 }
 
 .second-h2 {

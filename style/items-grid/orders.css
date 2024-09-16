@@ -109,7 +109,7 @@
 
 .product-image-container img {
   filter: drop-shadow(
-    0 0 6px black
+    0 0 6px rgb(85, 85, 85)
   );
   margin-bottom: 15px;
 }
