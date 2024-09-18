@@ -62,17 +62,17 @@
 }
 
 .second-info-box1 {
-  background: rgb(0,47,85);
-  background: linear-gradient(90deg, rgba(0,47,85,1) 0%, rgba(0,80,144,1) 64%, rgba(0,65,117,1) 100%);
+  background: rgb(25, 81, 150);
 }
 
 .second-info-box2 {
-  background: rgb(18,35,30);
-  background: linear-gradient(90deg, rgba(18,35,30,1) 0%, rgba(30,57,48,1) 64%, rgba(15,29,24,1) 100%); 
+  background: rgb(255,122,0);
+  background: radial-gradient(circle, rgba(255,122,0,1) 0%, rgba(217,93,0,1) 89%);
 }
 
 .second-info-box3 {
-  background-image: linear-gradient(to right, #f82020, #450a0a);
+  background: rgb(60,136,111);
+  background: radial-gradient(circle, rgba(60,136,111,1) 0%, rgba(30,75,60,1) 91%);
 }
 
 .second-info-grid {
