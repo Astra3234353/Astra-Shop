@@ -4,6 +4,7 @@ import { callCart, cart} from "../data/carrito.js";
 import { savedItemBtn } from "./pages/cart-functions.js";
 
 let loadedAccNum = 0;
+let anonAccount = 1;
 let htmlAccounts = document.querySelector('.js-products-grid');
 const addAccountsBtn = document.querySelector('.add-accounts-btn-js');
 
@@ -12,8 +13,48 @@ function load15Accounts() {
 
   for (let i = loadedAccNum; i < currentLoadedAccounts + 15; i++) {
     if (!accounts[i]) {
-      console.log(`no existe la cuenta con id ${i}`);
-      break;
+      if (anonAccount < 18) {
+
+          htmlAccounts.innerHTML +=
+          `
+            <div class="product-container">
+              <div class="product-image-container">
+                <a href="img/undefined-accounts/account${anonAccount}.jpg" target="_blank">
+                  <img class="product-image"
+                    src="img/undefined-accounts/account${anonAccount}.jpg">
+                </a>
+              </div>
+        
+              <div class="product-id limit-text-to-2-lines">
+                ID: UN${to4Digits(anonAccount)}
+              </div>
+        
+              <div class="product-no-text limit-text-to-2-lines">
+                No se proporciono muchos detalles sobre la cuenta... 
+              </div>
+        
+              <div class="product-price-box">
+                <div class="product-no-price">
+                Pregunta por precio
+                </div>
+                <div class="product-no-price-mm">en WhatsApp</div>
+              </div>
+        
+              <div class="product-spacer"></div>
+        
+        
+              <button class="add-to-cart-button button-primary2 js-add-to-cart-undefined"
+              data-product-id="i">
+                Link a WhatsApp
+              </button>
+            </div>
+          `;
+
+        anonAccount++;
+      } else {
+        console.log(`Se ha superado el limite de ${anonAccount}`);
+        break
+      }
     } else if (accounts[i]) {
       htmlAccounts.innerHTML +=
   `
@@ -26,7 +67,7 @@ function load15Accounts() {
       </div>
 
       <div class="product-id limit-text-to-2-lines">
-        ID: ${to4Digits(accounts[i].id)}
+        ID: DF${to4Digits(accounts[i].id)}
       </div>
 
       <div class="product-name limit-text-to-2-lines">
@@ -88,7 +129,6 @@ addAccountsBtn.addEventListener(('click'), () => {
 
   load15Accounts();
   load15Accounts();
-
 
 /*
 function loadAccounts() {

@@ -6,7 +6,7 @@ export function scrollIndexHeader() {
 
     if (window.scrollY > dynamicViewportHeight * 0.1) {
         header.style.opacity = '1';
-        header.style.background = 'white';
+        header.style.background = '#ededed';
         headerTitle.style.opacity = '1';
         header.style.boxShadow = "0 0 8px black";
     } else {
@@ -23,7 +23,7 @@ export function scrollHeader() {
     const header = document.querySelector('.header');
     if (window.scrollY > 0) {
         header.style.opacity = '1';
-        header.style.background = 'white';
+        header.style.background = '#ededed';
     }
   })
 };
