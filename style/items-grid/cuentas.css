@@ -521,3 +521,29 @@ input:focus {
   color: rgb(64, 182, 31);
   cursor: alias;
 }
+
+/*
+  BOTON DE AGREGAR CUENTAS
+*/
+.add-account-button-holder {
+  display: flex;
+}
+
+.add-accounts-btn {
+  flex: 1;
+  padding: 10px 0;
+  margin: 25px 1vw;
+  border: none;
+  background-color: #1495d5;
+  color: whitesmoke;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.add-accounts-btn:hover {
+  background-color: #1592d0;
+}
+
+.add-accounts-btn:active {
+  background-color: #1579ab;
+}
