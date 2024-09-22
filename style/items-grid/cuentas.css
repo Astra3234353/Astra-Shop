@@ -198,6 +198,13 @@ object-fit: cover;
   object-fit: contain;
 }
 
+@media (max-width: 500px) {
+  .product-image {
+    width: 200px;
+    height: 230px;
+  }
+}
+
 .product-image-cart {
   width: 400px;
   height: 200px;

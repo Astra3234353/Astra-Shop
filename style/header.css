@@ -75,23 +75,24 @@
 
 @media (max-width: 600px) {
   .header-items {
-    font-size: 10px;
+    font-size: 12px;
     text-decoration: underline 2px rgb(255, 139, 30);
   }
 }
 
 @media (max-width: 500px) {
   .header-items {
-    font-size: 9px;
+    font-size: 11px;
     text-decoration: underline 2px rgb(255, 139, 30);
   }
 }
 
 @media (max-width: 400px) {
   .header-items {
-    font-size: 8px;
+    font-size: 10px;
     text-decoration: underline 2px rgb(255, 139, 30);
   }
+
 }
 
 
