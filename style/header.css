@@ -71,6 +71,10 @@
     font-size: 12px;
     text-decoration: underline 3px rgb(255, 139, 30);
   }
+
+  .header-title {
+    text-decoration: none;
+  }
 }
 
 @media (max-width: 600px) {
