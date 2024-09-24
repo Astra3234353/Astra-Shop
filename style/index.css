@@ -131,6 +131,12 @@
   text-shadow: 0 0 1px rgb(0, 0, 0);
 }
 
+.main-h2 {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+
 /*
   PART C
 */

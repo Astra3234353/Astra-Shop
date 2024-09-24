@@ -20,7 +20,7 @@ function load15Accounts() {
             <div class="product-container">
               <div class="product-image-container">
                 <a href="img/undefined-accounts/account${anonAccount}.jpg" target="_blank">
-                  <img class="product-image"
+                  <img alt="cuenta de Lords Mobile sin id definido" class="product-image"
                     src="img/undefined-accounts/account${anonAccount}.jpg">
                 </a>
               </div>
@@ -61,7 +61,7 @@ function load15Accounts() {
     <div class="product-container">
       <div class="product-image-container">
         <a href="img/accounts/account${accounts[i].id}.jpg" target="_blank">
-          <img class="product-image"
+          <img alt="cuenta de Lords Mobile con id: ${accounts[i].id}" class="product-image"
             src="img/accounts/account${accounts[i].id}.jpg">
         </a>
       </div>
