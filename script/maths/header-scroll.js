@@ -35,9 +35,12 @@ const mainInfoDiv = document.querySelector('.main-info');
 
 
 const backgrounds = [
-    'url("https://astra3234353.github.io/Astra-Shop/img/wallpapers/hd-official-igg-backend-11k-fight.jpg")',
-    'url("https://astra3234353.github.io/Astra-Shop/img/wallpapers/hd-oficial-igg-backtend-image.jpg")',
-    'url("https://astra3234353.github.io/Astra-Shop/img/wallpapers/hd-official-igg-3.jpg")'
+    'url("../img/wallpapers/hd-official-igg-backend-11k-fight.jpg")',
+    'url("../img/wallpapers/hd-oficial-igg-backtend-image.jpg")',
+    'url("../img/wallpapers/hd-official-igg-3.jpg")',
+    'url("../img/wallpapers/hd-official-igg-chaos.jpg")',
+    'url("../img/wallpapers/hd-official-igg-wesley.png")',
+    'url("../img/wallpapers/hd-official-igg-hero.jpg")'
 ];
 
 export function cambiarFondo() {
