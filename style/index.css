@@ -10,7 +10,6 @@
 }
 
 .second-info {
-  box-sizing: border-box;
   overflow: hidden;
 }
 
@@ -59,12 +58,15 @@
   box-sizing: border-box;
   margin: 30px 0;
   padding: 5vh 0;
-  height: 70vh;
   color: white;
 }
 
 .second-info-box1 {
   background: rgb(25, 81, 150);
+}
+
+.second-info-gridN2 {
+  padding: 40px;
 }
 
 .second-info-box2 {
@@ -73,15 +75,36 @@
 }
 
 .second-info-box3 {
+  box-sizing: border-box;
   background: rgb(60,136,111);
   background: radial-gradient(circle, rgba(60,136,111,1) 0%, rgba(30,75,60,1) 91%);
 }
 
 .second-info-grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   height: 100%;
   align-items: center;
   overflow: hidden;
+  justify-items: center;
+}
+
+@media (max-width: 700px) {
+  .second-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .second-info-img {
+    height: 0;
+  }
+
+  .second-info-box3 {
+    padding: 80px 0;
+  }
+
+  .second-info-box3 img {
+    width: 0;
+  }
 }
 
 .second-info-first-box {
@@ -111,6 +134,7 @@
 .second-info-img {
   width: 25vw;
   object-fit: contain;
+  padding-bottom: 10px;
 }
 
 .second-info-img-p3 {
@@ -146,21 +170,24 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(rgb(0, 0, 0), rgb(92, 92, 92) 40%, black);
-  height: 120vh;
-  padding: 40px 0;
-  margin-top: 5vh;
+  background: linear-gradient(rgb(0, 0, 0), rgb(70, 70, 70) 40%, black);
+  height: 100%;
+  margin-top: 0;
 }
 
 .third-info img {
+  box-sizing: border-box;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: grayscale(25%);
+  opacity: 0.85;
+  transition: all 0.6s;
 }
 
 .third-info img:hover {
-  filter: grayscale(0);
+  opacity: 1;
+  border-left: solid 10px rgba(48, 48, 48, 0.284);
+  border-right: solid 10px rgba(48, 48, 48, 0.284);
 }
 
 .third-info-grid{
@@ -168,6 +195,32 @@
   grid-template-columns: 1fr 1fr;
 }
 
+@media (max-width: 650px) {
+  .third-info-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
 .third-info-first-box, .third-info-second-box, .third-info-third-box, .third-info-fourth-box {
   height: 60vh;
+  position: relative;
+}
+
+.third-info-link-info {
+  position: absolute;
+  z-index: 200;
+  top: 50%;
+  left: 0;
+  right: 0;
+
+  text-align: center;
+}
+
+.third-info-link-info p {
+  color: #ededee;
+  font-size: 3em;
+  font-weight: 600;
+  box-shadow: 0 0 6px black;
+  text-shadow: 0 0 3px black;
+  backdrop-filter: blur(2px);
 }

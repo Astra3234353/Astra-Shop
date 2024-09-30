@@ -60,7 +60,7 @@
   font-weight: 500;
   font-size: 15.5px;
   letter-spacing: -0.01em;
-  color: #363636;
+  color: #000000;
   transition: all 0.15s ;
   text-decoration: underline 5px rgb(255, 139, 30);
 }
@@ -103,6 +103,7 @@
 .header-items:hover {
   background-color: rgb(255, 139, 30);
   color: rgb(255, 255, 255);
+  text-shadow: none;
 }
 
 

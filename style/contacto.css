@@ -20,7 +20,7 @@ body {
   display: grid;
   grid-template-columns: 300px 1fr;
   background-color: rgb(255, 136, 0);
-  height: 360px;
+  height: 100%;
   padding: 10px;
   border-radius: 20px;
   margin-top: 20px;
@@ -32,9 +32,8 @@ body {
   display: inline-block;
   height: 270px;
   width: 270px;
-  margin-top: 35px;
-  margin-left: 35px;
-  background-color: lightblue;
+  margin: 30px 35px 30px 35px;
+  background-color: rgb(46, 49, 50);
   border-radius: 20px;
 }
 
@@ -45,7 +44,14 @@ body {
   border-radius: 20px;
   box-shadow: 0 9px 9px 0 rgba(0, 0, 0, 0.705),
   0 0 29px 0 rgba(0, 0, 0, 0.671);
+  opacity: 1;
+  transition: all 0.4s;
 }
+
+.contacto-container-img img:hover {
+  opacity: 0.8;
+}
+
 
 .contacto-container-whats {
   text-align: end;
@@ -55,7 +61,6 @@ body {
 .contacto-container-info {
   color: white;
   margin: 0 35px;
-  height: 240px;
 }
 
 .contacto-container-info-name {
@@ -69,11 +74,19 @@ body {
 
 .contacto-container-info-extra {
   color: rgb(242, 242, 242);
+  margin-bottom: 20px;
 }
 
 .contacto-container-info-extra:hover {
   color: rgb(242, 242, 242);
   text-decoration: underline 2px rgb(218, 216, 216);
+}
+
+@media (max-width: 650px) {
+  .contacto-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
 }
 
 /*
