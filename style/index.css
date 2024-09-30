@@ -63,6 +63,7 @@
 
 .second-info-box1 {
   background: rgb(25, 81, 150);
+  padding: 100px 0;
 }
 
 .second-info-gridN2 {
@@ -72,6 +73,7 @@
 .second-info-box2 {
   background: rgb(255,122,0);
   background: radial-gradient(circle, rgba(255,122,0,1) 0%, rgba(217,93,0,1) 89%);
+  padding: 60px 0;
 }
 
 .second-info-box3 {
@@ -82,7 +84,7 @@
 
 .second-info-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 12fr 18fr;
   height: 100%;
   align-items: center;
   overflow: hidden;
