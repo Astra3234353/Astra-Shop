@@ -1,4 +1,6 @@
-
+body {
+  padding-bottom: 0 !important;
+}
 
 
 .main-info,
@@ -311,15 +313,12 @@
   color: #eeeded;
   font-size: 3em;
   font-weight: 600;
-  box-shadow: 5px 0px 6px black;
   text-shadow: 0 0 3px black;
-  background: rgb(255,139,30);
-  background: radial-gradient(circle, rgba(255,139,30,1) 14%, rgba(231,105,51,1) 84%);
+  background: rgb(98, 53, 8);
+  background: radial-gradient(circle, rgba(255, 139, 30, 0) 14%, rgb(223, 129, 57) 84%);
 }
 
 .final-block {
   background-color: rgb(28, 28, 28);
-  height: 75px;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
+  height: 120px
 }
