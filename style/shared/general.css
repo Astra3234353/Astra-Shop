@@ -60,6 +60,7 @@ dialog {
   border: none;
   border-radius: 8px;
   box-shadow: 0 0 3px rgb(39, 39, 39);
+  background-color: #ededed;
 }
 
 

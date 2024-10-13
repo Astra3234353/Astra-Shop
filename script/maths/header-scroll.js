@@ -1,7 +1,7 @@
 export function scrollIndexHeader() {
     window.addEventListener('scroll', function() {
     const header = document.querySelector('.header');
-    const headerTitle = document.querySelector('.header-title');
+    const headerTitle = document.querySelector('.Astra-Shop-title');
     const headerItems = document.querySelectorAll('.header-items');
     const dynamicViewportHeight = window.innerHeight;
 

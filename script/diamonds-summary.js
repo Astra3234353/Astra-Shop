@@ -38,4 +38,12 @@ diamonds.forEach(diamond => {
       </button>
     </div>
   `
+});
+
+const dialog = document.querySelector('.dialog-alert');
+const closeDialogBtn = document.querySelector('.modal__close-button');
+
+closeDialogBtn.addEventListener("click", () => {
+    dialog.close();
 })
+
