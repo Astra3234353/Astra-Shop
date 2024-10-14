@@ -16,12 +16,9 @@ headerItems.forEach((headerItem) => {
 scrollIndexHeader();
 cambiarFondo();
 
-const dynamicViewportHeight = window.innerHeight;
-
-
 const dialog = document.querySelector('.dialog-alert');
 const closeDialogBtn = document.querySelector('.modal__close-button');
 
 closeDialogBtn.addEventListener("click", () => {
-    dialog.close();
-})
+    dialog.style.display = 'none';
+});
