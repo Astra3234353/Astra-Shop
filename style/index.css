@@ -269,13 +269,14 @@ body {
   height: 100%;
   object-fit: cover;
   opacity: 0.85;
-  transition: transform 1.5s ease;
+  transition: all ease-in-out 0.4s;
   position: absolute;
 }
 
 .third-info img:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
   opacity: 1;
-  transform: scale(0.90);
   z-index: 200;
 }
 
@@ -293,6 +294,9 @@ body {
 .third-info-first-box, .third-info-second-box, .third-info-third-box, .third-info-fourth-box {
   height: 60vh;
   position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 3px;
 }
 
 .third-info-link-info {
