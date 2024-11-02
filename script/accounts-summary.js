@@ -19,7 +19,7 @@ function load15Accounts() {
             <div class="product-image-container">
               <a href="img/accounts/account${accounts[i].id}.jpg" target="_blank">
                 <img alt="cuenta de Lords Mobile con id: ${accounts[i].id}" class="product-image"
-                  src="img/accounts/account${accounts[i].id}.jpg">
+                  src="img/accounts/account${accounts[i].id}.jpg" draggable="false">
               </a>
             </div>
 

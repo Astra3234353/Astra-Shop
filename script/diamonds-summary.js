@@ -11,7 +11,7 @@ diamonds.forEach(diamond => {
     <div class="product-container diamante-${diamond.diamondPack}">
       <div class="product-image-container product-diamond-image-container product-image-${diamond.diamondPack}">
         <img class="product-image-diamond"
-          src="${diamond.url}">
+          src="${diamond.url}" draggable="false">
       </div>
 
       <div class="product-id limit-text-to-2-lines">

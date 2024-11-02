@@ -12,7 +12,7 @@ cart.forEach((cartId)=> {
         <div class="product-container cart-product-${cartId}">
       <div class="product-image-container">
         <a href="img/accounts/account${cartId}.jpg" target="_blank">
-          <img class="product-image-cart" src="img/accounts/account${cartId}.jpg">
+          <img class="product-image-cart" src="img/accounts/account${cartId}.jpg" draggable="false">
         </a>
       </div>
 

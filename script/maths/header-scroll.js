@@ -67,8 +67,7 @@ const backgrounds = [
     'url("https://astra3234353.github.io/Astra-Shop/img/wallpapers/hd-official-igg-backend-11k-fight.jpg")',
     'url("https://astra3234353.github.io/Astra-Shop/img/wallpapers/hd-oficial-igg-backtend-image.jpg")',
     'url("https://astra3234353.github.io/Astra-Shop/img/wallpapers/hd-official-igg-3.jpg")',
-    'url("https://astra3234353.github.io/Astra-Shop/img/wallpapers/hd-official-igg-chaos.jpg")',
-    'url("https://astra3234353.github.io/Astra-Shop/img/wallpapers/hd-official-igg-wesley.png")'
+    'url("https://astra3234353.github.io/Astra-Shop/img/wallpapers/hd-official-igg-chaos.jpg")'
 ];
 
 export function cambiarFondo() {
