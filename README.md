@@ -1,1 +1,1 @@
-Recreacion frontend de la pagina de Adidas, pagia creada con javascript, html y css plano, con el objetivo de demostrar mis habilidades en dichos lenguajes
+Pagina basica de un ecomerce ficticio, en las que puse en practica lo aprendido, pagia creada con javascript, html y css en un nivel basico
